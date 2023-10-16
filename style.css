@@ -1,0 +1,158 @@
+/* input font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* default variable  */
+:root {
+	--color-primary: #7380ec;
+	--color-danger: #ff7782;
+	--color-success: #41f1b6;
+	--color-warning: #ffcc00;
+	--color-info-light: #dce1eb;
+	--color-info-dark: #7da1;
+	--color-light: rgba(132, 139, 200, 0.18);
+	--color-dark: #343a40;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-primary-variant: #111e88;
+	--color-dark-variant: #677483;
+	--color-background: #f6f6f9;
+
+	--card-border-radius: 2rem;
+	--border-radius-3: 0.4rem;
+	--border-radius-2: 0.8rem;
+	--border-radius-1: 1.2rem;
+
+	--card-padding: 1.8rem;
+	--padding: 1.2rem;
+
+	--box-shadow: 0 2rem 3rem var(var(--color-light));
+}
+/* global setting */
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	appearance: none;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: var(--color-background);
+	font-size: 0.88rem;
+	user-select: none;
+	overflow: hidden;
+}
+
+a {
+	color: var(--color-dark);
+}
+
+p {
+	color: var(--color-dark-variant);
+}
+
+b {
+	color: var(--color-dark);
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+}
+
+h3 {
+	font-size: 0.88rem;
+}
+
+h4 {
+	font-size: 0.8rem;
+}
+
+h5 {
+	font-size: 0.77rem;
+}
+
+img {
+	display: block;
+}
+h1 > span {
+	color: red;
+}
+
+small {
+	font-size: 0.75rem;
+}
+
+.primary {
+	color: var(--color-primary);
+}
+.danger {
+	color: var(--color-danger);
+}
+.success {
+	color: var(--color-success);
+}
+.warning {
+	color: var(--color-warning);
+}
+
+.profile-photo {
+	width: 2.8rem;
+	height: 2.8rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.text-muted {
+	color: var(--color-info-dark);
+}
+
+.container {
+	display: grid;
+	width: 96%;
+	margin: 0 auto;
+	grid-template-columns: 18rem auto 24rem;
+	gap: 1.8rem;
+}
+
+aside {
+	height: 100vh;
+	background: gray;
+}
+
+aside .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	margin-top: 1.4rem;
+}
+
+aside .logo img {
+	width: 3rem;
+	height: 3rem;
+}
+aside .top .logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+aside .close {
+	display: none;
+}
+
+/* sidebar */
