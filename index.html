@@ -12,6 +12,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<!-- sidebar start -->
 			<aside>
 				<div class="top">
 					<div class="logo">
@@ -30,7 +31,7 @@
 						</span>
 						<h3>Dashboard</h3>
 					</a>
-					<a href="">
+					<a href="" class="active">
 						<span class="material-symbols-rounded"> person</span>
 						<h3>Customers</h3>
 					</a>
@@ -49,8 +50,9 @@
 					<a href="">
 						<span class="material-symbols-rounded"> mail </span>
 						<h3>Messages</h3>
-						<span>26</span>
+						<div><span class="message-count">26</span></div>
 					</a>
+
 					<a href="">
 						<span class="material-symbols-rounded">
 							inventory
@@ -69,8 +71,102 @@
 						<span class="material-symbols-rounded"> add </span>
 						<h3>Add Product</h3>
 					</a>
+					<a href="">
+						<span class="material-symbols-rounded"> logout </span>
+						<h3>logout</h3>
+					</a>
 				</div>
 			</aside>
+			<!-- sidebar end -->
+			<!-- main section start -->
+			<main>
+				<h1>Dashboard</h1>
+				<div class="date"><input type="date" /></div>
+				<div class="insights">
+					<!-- sales card start -->
+					<div class="sales">
+						<span class="material-symbols-rounded">
+							insert_chart
+						</span>
+						<div class="middle">
+							<div class="left">
+								<h3>Total Sales</h3>
+								<h1>$25,024</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle
+										cx="38"
+										cy="38"
+										r="36"
+										fill="transparent"
+										stroke="#ccc"
+									></circle>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number"><p>81%</p></div>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 Hours</small>
+					</div>
+					<!-- sales card end -->
+					<!-- expenses card start -->
+					<div class="expenses">
+						<span class="material-symbols-rounded">
+							bar_chart
+						</span>
+						<div class="middle">
+							<div class="left">
+								<h3>Total Expenses</h3>
+								<h1>$14,124</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle
+										cx="38"
+										cy="38"
+										r="36"
+										fill="transparent"
+										stroke="#ccc"
+									></circle>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number"><p>60%</p></div>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 Hours</small>
+					</div>
+					<!-- expenses card end -->
+					<!-- income card start -->
+					<div class="income">
+						<span class="material-symbols-rounded">
+							stacked_line_chart
+						</span>
+						<div class="middle">
+							<div class="left">
+								<h3>Total Income</h3>
+								<h1>$25,024</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle
+										cx="38"
+										cy="38"
+										r="36"
+										fill="transparent"
+										stroke="#ccc"
+									></circle>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="number"><p>44%</p></div>
+							</div>
+						</div>
+						<small class="text-muted">Last 24 Hours</small>
+					</div>
+					<!-- income card end -->
+				</div>
+			</main>
+			<!-- main section end -->
 		</div>
 	</body>
 </html>
