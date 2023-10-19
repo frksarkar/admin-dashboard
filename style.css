@@ -23,8 +23,9 @@
 
 	--card-padding: 1.8rem;
 	--padding: 1.2rem;
+	--margin-top: 1.8rem;
 
-	--box-shadow: 0 2rem 3rem var(var(--color-light));
+	--box-shadow: 0 0.3rem 1rem var(--color-light);
 }
 /* global setting */
 * {
@@ -87,6 +88,7 @@ h5 {
 
 img {
 	display: block;
+	width: 100%;
 }
 h1 > span {
 	color: red;
@@ -138,7 +140,7 @@ aside .top {
 	align-items: center;
 	justify-content: space-between;
 	background-color: white;
-	margin-top: 1.4rem;
+	margin-top: var(--margin-top);
 }
 
 aside .logo img {
@@ -149,6 +151,7 @@ aside .top .logo {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+	margin-left: 28px;
 }
 
 aside .close {
@@ -226,9 +229,9 @@ aside .sidebar .message-count {
 
 /* end sidebar */
 
-/* main section start style */
+/* main section start css style */
 main {
-	margin-top: 1.4rem;
+	margin-top: var(--margin-top);
 }
 
 main .insights {
@@ -321,9 +324,9 @@ main .insights small {
 	margin-top: 1.3rem;
 	display: block;
 }
-/* main section end style */
+/* main section end css style */
 
-/* recent orders section start */
+/* recent orders section css start */
 
 main .recent-orders {
 	margin-top: 2rem;
@@ -362,4 +365,79 @@ main .recent-orders a {
 	text-align: center;
 }
 
-/* recent orders section end */
+/* recent orders section css end */
+
+/* right section css start */
+
+.right {
+	margin-top: var(--margin-top);
+}
+
+#menu-btn {
+	display: none;
+}
+
+.right .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.right .top .profile {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	text-align: right;
+}
+
+.right .top .theme-toggler {
+	display: flex;
+	width: 4.5rem;
+	height: 2rem;
+	padding: 3px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-light);
+	border-radius: var(--border-radius-1);
+	cursor: pointer;
+}
+
+.right .theme-toggler span.active {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border-radius: var(--border-radius-1);
+	padding: 2px;
+}
+
+/* right section css end */
+
+/* recently updated css start */
+
+.right .recent-updates {
+	margin-top: 1rem;
+}
+
+.right .recent-updates h2 {
+	margin-bottom: 0.8rem;
+}
+
+.right .recent-updates .updates {
+	background-color: var(--color-white);
+	border-radius: var(--card-border-radius);
+	padding: var(--card-padding);
+	box-shadow: var(--box-shadow);
+	transition: all 300ms ease;
+}
+
+.right .recent-updates .update {
+	display: grid;
+	grid-template-columns: 3rem auto;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.right .recent-updates .updates:hover {
+	box-shadow: none;
+}
+
+/* recently updated css end */
