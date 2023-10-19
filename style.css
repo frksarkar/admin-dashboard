@@ -369,7 +369,7 @@ main .recent-orders a {
 
 /* right section css start */
 
-.right {
+.container > .right {
 	margin-top: var(--margin-top);
 }
 
@@ -393,7 +393,7 @@ main .recent-orders a {
 .right .top .theme-toggler {
 	display: flex;
 	width: 4.5rem;
-	height: 2rem;
+	height: 2.4rem;
 	padding: 3px;
 	justify-content: space-between;
 	align-items: center;
@@ -406,7 +406,7 @@ main .recent-orders a {
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	border-radius: var(--border-radius-1);
-	padding: 2px;
+	padding: 2px 4px;
 }
 
 /* right section css end */
@@ -439,5 +439,54 @@ main .recent-orders a {
 .right .recent-updates .updates:hover {
 	box-shadow: none;
 }
-
 /* recently updated css end */
+
+/* sales analytics css start */
+
+.right .sales-analytics {
+	margin-top: 2rem;
+}
+.right .sales-analytics > h2 {
+	margin-bottom: 0.8rem;
+}
+.right .sales-analytics .item {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 1.4rem;
+	margin-bottom: 0.8rem;
+	background-color: var(--color-white);
+	border-radius: var(--border-radius-1);
+}
+.right .sales-analytics .item > .right {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.right .sales-analytics .item > .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	padding: 0.6rem;
+	border-radius: 50%;
+}
+.right .sales-analytics .item.offline .icon {
+	background-color: var(--color-danger);
+}
+.right .sales-analytics .item.customers .icon {
+	background-color: var(--color-success);
+}
+.right .sales-analytics .add-product {
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	border: 2px dashed var(--color-primary);
+}
+.right .sales-analytics .add-product > div {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+/* sales analytics css end */
