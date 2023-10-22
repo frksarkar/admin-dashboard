@@ -39,7 +39,6 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-
 html {
 	font-size: 14px;
 }
@@ -50,7 +49,7 @@ body {
 	background: var(--color-background);
 	font-size: 0.88rem;
 	user-select: none;
-	overflow: hidden;
+	overflow: auto;
 }
 
 a {
@@ -491,4 +490,45 @@ main .recent-orders a {
 }
 /* sales analytics css end */
 
-/* media query */
+/* media query - responsive for big tablet css start */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 96%;
+		grid-template-columns: 7rem auto 24rem;
+	}
+	aside .top .logo > h1 {
+		display: none;
+	}
+	aside .sidebar h3 {
+		display: none;
+	}
+	aside .sidebar span {
+		text-align: center;
+		line-height: 60px;
+	}
+
+	aside .sidebar a:last-child {
+		position: relative;
+		bottom: initial;
+	}
+	aside .sidebar .message-count {
+		padding: 2px 6px;
+		margin-left: initial;
+	}
+
+	main .insights {
+		grid-template-columns: 1fr;
+		gap: initial;
+	}
+	main .insights small {
+		margin-top: initial;
+	}
+	main .recent-orders {
+		margin-top: 2rem;
+		position: absolute;
+		width: 85%;
+		left: 50%;
+		transform: translate(-44%);
+	}
+}
+/* media query - responsive for big tablet css end */
