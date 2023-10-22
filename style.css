@@ -490,8 +490,11 @@ main .recent-orders a {
 }
 /* sales analytics css end */
 
-/* media query - responsive for big tablet css start */
+/* Extra Large Devices (large desktops and high-resolution screens) css start */
 @media screen and (max-width: 1200px) {
+	body {
+		width: inherit;
+	}
 	.container {
 		width: 96%;
 		grid-template-columns: 7rem auto 24rem;
@@ -531,4 +534,94 @@ main .recent-orders a {
 		transform: translate(-44%);
 	}
 }
-/* media query - responsive for big tablet css end */
+/* Extra Large Devices (large desktops and high-resolution screens) css end */
+
+/* media query - smaller tablet and mobile css start */
+@media screen and (max-width: 768px) {
+	body {
+		width: inherit;
+	}
+	.container {
+		margin-top: 30px;
+		grid-template-columns: 1fr;
+		gap: initial;
+	}
+	aside .top .logo > h1 {
+		display: initial;
+	}
+	aside {
+		width: 18rem;
+		z-index: 3;
+		display: none;
+	}
+	aside .close {
+		display: inline;
+		margin-right: 10px;
+	}
+	aside .sidebar h3 {
+		display: initial;
+	}
+	aside .sidebar span {
+		text-align: initial;
+		line-height: initial;
+	}
+
+	aside .sidebar a:last-child {
+		position: absolute;
+		bottom: 10px;
+	}
+	aside .sidebar .message-count {
+		padding: 2px 6px;
+		margin-left: initial;
+	}
+
+	main .insights {
+		grid-template-columns: 1fr;
+		gap: initial;
+	}
+	main .insights small {
+		margin-top: initial;
+	}
+	main .recent-orders {
+		margin-top: 2rem;
+		position: inherit;
+		width: inherit;
+		left: 50%;
+		transform: inherit;
+	}
+	.right .top {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 3.5rem;
+		padding: 0px 20px;
+		justify-content: flex-end;
+		gap: 3rem;
+		z-index: 3;
+		background-color: var(--color-white);
+		box-shadow: var(--box-shadow);
+	}
+
+	/* .right .profile .info {
+		display: none;
+	} */
+
+	#menu-btn {
+		display: flex;
+		background-color: transparent;
+		position: absolute;
+		left: 1rem;
+		cursor: pointer;
+	}
+	#menu-btn > span {
+		font-size: 2rem;
+	}
+
+	:is(main .recent-orders table) :is(tbody) tr > :last-child,
+	tr > :nth-child(2) {
+		display: none;
+	}
+}
+
+/* media query - smaller tablet and mobile css end */
