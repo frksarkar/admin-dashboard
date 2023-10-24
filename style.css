@@ -505,6 +505,7 @@ main .recent-orders a {
 	align-items: center;
 	background: transparent;
 	border: 2px dashed var(--color-primary);
+	cursor: pointer;
 	transition: all 300ms ease;
 }
 /* .right .sales-analytics .add-product:hover h3 {
