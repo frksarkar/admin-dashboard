@@ -508,6 +508,12 @@ main .recent-orders a {
 	cursor: pointer;
 	transition: all 300ms ease;
 }
+
+.right .sales-analytics .add-product > div {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
 /* .right .sales-analytics .add-product:hover h3 {
 	background: var(--color-primary);
 	color: var(--color-white);
@@ -525,11 +531,6 @@ main .recent-orders a {
 	color: var(--color-dark);
 }
 
-.right .sales-analytics .add-product > div {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-}
 /* sales analytics css end */
 
 /* Extra Large Devices (large desktops and high-resolution screens) css start */
