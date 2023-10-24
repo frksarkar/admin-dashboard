@@ -27,6 +27,19 @@
 
 	--box-shadow: 0 0.3rem 1rem var(--color-light);
 }
+
+/*  dark theme variable */
+.dark-theme-variable {
+	--color-background: #181a1e;
+	--color-white: #202538;
+	--color-dark: #edeffd;
+	--color-dark-variant: #a3bdcc;
+	--color-light: rgba(0, 0, 0, 0.4);
+	--box-shadow: 0 1rem 1rem var(--color-light);
+}
+
+.dark-theme {
+}
 /* global setting */
 * {
 	margin: 0;
@@ -71,14 +84,17 @@ b {
 h1 {
 	font-weight: 800;
 	font-size: 1.8rem;
+	color: var(--color-dark);
 }
 
 h2 {
 	font-size: 1.4rem;
+	color: var(--color-dark);
 }
 
 h3 {
 	font-size: 0.88rem;
+	color: var(--color-dark);
 }
 
 h4 {
@@ -142,7 +158,7 @@ aside .top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: white;
+	background-color: var(--color-white);
 	margin-top: var(--margin-top);
 }
 
@@ -165,11 +181,12 @@ aside .close {
 
 aside .sidebar {
 	display: flex;
-	background-color: white;
+	background-color: var(--color-white);
 	flex-direction: column;
 	height: 86vh;
 	position: relative;
 	top: 3rem;
+	box-shadow: var(--box-shadow);
 }
 
 aside .sidebar h3 {
