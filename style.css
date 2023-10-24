@@ -596,6 +596,7 @@ main .recent-orders a {
 	aside .close {
 		display: inline;
 		margin-right: 10px;
+		color: var(--color-dark);
 	}
 	aside .sidebar h3 {
 		display: initial;
@@ -655,6 +656,7 @@ main .recent-orders a {
 	}
 	#menu-btn > span {
 		font-size: 2rem;
+		color: var(--color-dark);
 	}
 
 	:is(main .recent-orders table) :is(tbody) tr > :last-child,
