@@ -356,6 +356,9 @@ main .recent-orders h2 {
 	margin-bottom: 1rem;
 }
 
+main .recent-orders table th {
+	color: var(--color-dark);
+}
 main .recent-orders table {
 	width: 100%;
 	border-radius: var(--border-radius-1);
